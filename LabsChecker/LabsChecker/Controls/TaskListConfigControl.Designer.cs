@@ -132,13 +132,13 @@
 			tabControlTasks.Size = new Size(843, 650);
 			tabControlTasks.TabIndex = 3;
 			// 
-			// TaskConfigControl
+			// TaskListConfigControl
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			Controls.Add(tabControlTasks);
 			Controls.Add(panelTaskBlock);
-			Name = "TaskConfigControl";
+			Name = "TaskListConfigControl";
 			Size = new Size(843, 722);
 			panelTaskBlock.ResumeLayout(false);
 			panelTaskBlock.PerformLayout();

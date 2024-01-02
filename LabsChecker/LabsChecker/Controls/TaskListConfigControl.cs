@@ -56,6 +56,16 @@ public partial class TaskListConfigControl : UserControl
 				UseVisualStyleBackColor = true
 			};
 
+			page.Controls.Add(new TaskConfigControl
+			{
+				Dock = DockStyle.Fill,
+				Location = new Point(3, 3),
+				Name = $"taskConfigControl{task.Id}",
+				Size = new Size(723, 503),
+				TabIndex = 0,
+				TaskModel = task
+			});
+
 			tabControlTasks.TabPages.Add(page);
 		}
 

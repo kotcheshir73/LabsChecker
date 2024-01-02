@@ -6,6 +6,11 @@
 public class ErrorModel : ICloneable
 {
 	/// <summary>
+	/// Идентификатор
+	/// </summary>
+	public Guid Id { get; set; } = Guid.NewGuid();
+
+	/// <summary>
 	/// Текст ошибки
 	/// </summary>
 	public string Text { get; set; } = string.Empty;

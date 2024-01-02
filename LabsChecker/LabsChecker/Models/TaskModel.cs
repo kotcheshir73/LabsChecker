@@ -6,6 +6,11 @@
 public class TaskModel : ICloneable
 {
 	/// <summary>
+	/// Идентификатор
+	/// </summary>
+	public Guid Id { get; set; } = Guid.NewGuid();
+
+	/// <summary>
 	/// Заголовок
 	/// </summary>
 	public string TaskTitle { get; set; } = string.Empty;
