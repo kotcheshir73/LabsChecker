@@ -1,3 +1,4 @@
+using LabsChecker.Controls;
 using LabsChecker.Forms;
 using LabsChecker.Logics;
 using Microsoft.Extensions.Configuration;
@@ -36,7 +37,11 @@ namespace LabsChecker
 					//option.AddNLog("nlog.config");
 				})
 				.AddSingleton<IConfiguration>(configuration)
+
 				.AddSingleton<LabWorkLogic>()
+
+				.AddSingleton<LabWorkConfigControl>()
+
 				.AddSingleton<LabWorkConfigForm>();
 		}
 	}

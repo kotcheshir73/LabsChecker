@@ -1,6 +1,6 @@
 ﻿namespace LabsChecker.Controls
 {
-	partial class TaskListConfigControl
+	partial class LabWorkCheckBlockConfigControl
 	{
 		/// <summary> 
 		/// Обязательная переменная конструктора.
@@ -36,7 +36,7 @@
 			buttonAddTask = new Button();
 			textBoxTaskName = new TextBox();
 			labelTaskName = new Label();
-			tabControlTasks = new TabControl();
+			tabControlItems = new TabControl();
 			panelTaskBlock.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -52,8 +52,8 @@
 			panelTaskBlock.Dock = DockStyle.Top;
 			panelTaskBlock.Location = new Point(0, 0);
 			panelTaskBlock.Name = "panelTaskBlock";
-			panelTaskBlock.Size = new Size(843, 72);
-			panelTaskBlock.TabIndex = 2;
+			panelTaskBlock.Size = new Size(786, 72);
+			panelTaskBlock.TabIndex = 3;
 			panelTaskBlock.Visible = false;
 			// 
 			// buttonPasteTask
@@ -123,23 +123,23 @@
 			labelTaskName.TabIndex = 0;
 			labelTaskName.Text = "Название блока:";
 			// 
-			// tabControlTasks
+			// tabControlItems
 			// 
-			tabControlTasks.Dock = DockStyle.Fill;
-			tabControlTasks.Location = new Point(0, 72);
-			tabControlTasks.Name = "tabControlTasks";
-			tabControlTasks.SelectedIndex = 0;
-			tabControlTasks.Size = new Size(843, 650);
-			tabControlTasks.TabIndex = 3;
+			tabControlItems.Dock = DockStyle.Fill;
+			tabControlItems.Location = new Point(0, 72);
+			tabControlItems.Name = "tabControlItems";
+			tabControlItems.SelectedIndex = 0;
+			tabControlItems.Size = new Size(786, 649);
+			tabControlItems.TabIndex = 4;
 			// 
-			// TaskListConfigControl
+			// LabWorkCheckBlockConfigControl
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			Controls.Add(tabControlTasks);
+			Controls.Add(tabControlItems);
 			Controls.Add(panelTaskBlock);
-			Name = "TaskListConfigControl";
-			Size = new Size(843, 722);
+			Name = "LabWorkCheckBlockConfigControl";
+			Size = new Size(786, 721);
 			panelTaskBlock.ResumeLayout(false);
 			panelTaskBlock.PerformLayout();
 			ResumeLayout(false);
@@ -155,6 +155,6 @@
 		private Button buttonAddTask;
 		private TextBox textBoxTaskName;
 		private Label labelTaskName;
-		private TabControl tabControlTasks;
+		private TabControl tabControlItems;
 	}
 }

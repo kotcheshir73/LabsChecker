@@ -16,7 +16,7 @@ public class LabWorkModel
 	public string LabWorkTitle { get; set; } = string.Empty;
 
 	/// <summary>
-	/// Перечень возможных требвоания по работе
+	/// Перечень возможных требований по работе
 	/// </summary>
-	public List<TaskModel> Tasks { get; set; } = [];
+	public List<LabWorkCheckBlockModel> Blocks { get; set; } = [];
 }
